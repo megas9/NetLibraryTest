@@ -1,0 +1,4 @@
+-- SQL request
+
+SELECT Products.Name, Category.Name
+FROM (Products LEFT JOIN products_categoryes ON Products.ID = products_categoryes.product_id) INNER JOIN Category ON products_categoryes.category_id = Category.ID;
